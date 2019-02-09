@@ -20,6 +20,9 @@ from app.views import index, linechart, get_news
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
-    path('linechart/', linechart, name="linechart"),
     path('get_news/', get_news, name="get_news"),
+    path('chart/', chart, name="linechart"),
+    path('trying/', trying, name="trying"),
+    path('sports/', render_sports_page, name="render_sports_page"),
+    path('politics/', render_politics_page, name="render_politics_page"),
 ]
